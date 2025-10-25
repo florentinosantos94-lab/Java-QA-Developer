@@ -1,0 +1,83 @@
+Classe UserStory
+java
+
+public class UserStory {
+    private String descricao;
+    private String epic;
+    private String motivo;
+    private List<String> criteriosAceitacao;
+
+    public UserStory(String descricao, String epic, String motivo, List<String> criteriosAceitacao) {
+        this.descricao = descricao;
+        this.epic = epic;
+        this.motivo = motivo;
+        this.criteriosAceitacao = criteriosAceitacao;
+    }
+
+    // Getters e Setters
+}
+Classe PlanoTestes
+java
+
+public class PlanoTestes {
+    private String descricao;
+    private List<CasoTeste> casosTeste;
+
+    public PlanoTestes(String descricao, List<CasoTeste> casosTeste) {
+        this.descricao = descricao;
+        this.casosTeste = casosTeste;
+    }
+
+    // Getters e Setters
+}
+Classe CasoTeste
+java
+
+public class CasoTeste {
+    private String descricao;
+    private String passos;
+    private String dados;
+    private String preCondicoes;
+    private String posCondicoes;
+
+    public CasoTeste(String descricao, String passos, String dados, String preCondicoes, String posCondicoes) {
+        this.descricao = descricao;
+        this.passos = passos;
+        this.dados = dados;
+        this.preCondicoes = preCondicoes;
+        this.posCondicoes = posCondicoes;
+    }
+
+    // Getters e Setters
+}
+Classe MindMap
+java
+
+public class MindMap {
+    private String userStoryRelacionada;
+    private String descricao;
+    private List<String> subtopicos;
+
+    public MindMap(String userStoryRelacionada, String descricao, List<String> subtopicos) {
+        this.userStoryRelacionada = userStoryRelacionada;
+        this.descricao = descricao;
+        this.subtopicos = subtopicos;
+    }
+
+    // Getters e Setters
+}
+Classe CicloTestes
+java
+
+public class CicloTestes {
+    private String descricao;
+    private List<CasoTeste> casosTeste;
+
+    public CicloTestes(String descricao, List<CasoTeste> casosTeste) {
+        this.descricao = descricao;
+        this.casosTeste = casosTeste;
+    }
+
+    // Getters e Setters
+}
+Essa é uma implementação básica das classes em Java para o projeto de testes manuais no mundo ágil.
